@@ -4,6 +4,8 @@ version = "0.1.0"
 description = "Render a .cob.json file as an SVG"
 readme = "README.md"
 requires-python = ">=3.11"
+license = "CC-BY-4.0"
+authors = [{ name = "Stephan Bökelmann" }]
 dependencies = []
 
 [project.scripts]

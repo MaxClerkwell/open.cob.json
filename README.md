@@ -113,9 +113,16 @@ more valuable than pull requests.
 
 ## License
 
-The license for this project has not been decided yet. Until then, all rights
-are reserved by the author. If you want to use or build on this work, please
-get in touch.
+This work, including the format specification, documentation, examples and
+tools, is licensed under the
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
+(CC BY 4.0). See [`LICENSE`](LICENSE).
+
+You may copy, modify, fork and use it commercially, as long as you credit
+the original work and indicate if changes were made. Suggested attribution:
+
+> open.cob.json by Stephan Bökelmann, https://github.com/MaxClerkwell/open.cob.json,
+> licensed under CC BY 4.0.
 
 ## Author
 
