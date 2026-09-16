@@ -133,6 +133,22 @@ kicad-cli sym export svg --output ./out/svg ./out/OCJ-DEMO1.kicad_sym
 kicad-cli fp  export svg --output ./out/svg --layers "F.Cu,F.Mask,F.SilkS,Dwgs.User" ./out/open_cob.pretty
 ```
 
+### Altium and other EDA tools
+
+There is no direct Altium export, and none is planned: Altium's library
+formats are undocumented binary files. The intended route is Altium's
+built-in KiCad importer, available since Altium Designer 21, which reads
+`.kicad_sym` and `.pretty` libraries. So: generate the KiCad library as
+above, then import it in Altium.
+
+**I have not verified this myself.** I do not have an Altium installation.
+If you do, please try it with the demo chip and
+[open an issue](https://github.com/MaxClerkwell/open.cob.json/issues) with
+your Altium version and what survived the import, in particular the custom
+pad shapes, the mask polygons and the via keepout rule area. Reports for
+other tools with a KiCad importer, such as Fusion or Allegro, are just as
+welcome.
+
 ### Try it: place pads in the editor and export
 
 The same demo chip can be opened in the editor, changed, and exported
