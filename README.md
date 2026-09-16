@@ -1,9 +1,9 @@
 # open.cob.json
 
+<img src="docs/die-on-board.jpg" align="right" width="180" alt="A bare die glued onto a PCB, gold-colored top metal catching the light, with a fan of thin bond wires running from the chip edge down to a field of bond fingers on the board">
+
 **From bare die to bonded board, with nothing left to re-derive.**
 Describe the chip once, generate the rest.
-
-![A bare die glued onto a PCB, gold-colored top metal catching the light, with a fan of thin bond wires running from the chip edge down to a field of bond fingers on the board](docs/die-on-board.jpg)
 
 An open, canonical, machine-readable format for exchanging Chip-on-Board (COB)
 wire-bonding information between chip designers and PCB designers.
