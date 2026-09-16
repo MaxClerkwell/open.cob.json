@@ -24,8 +24,10 @@ look like, and where do cutouts and courtyards go? These questions are
 surprisingly hard to answer, especially while the land pattern itself is still
 undefined.
 
-In every project I have worked on, this information existed, but it was
-scattered across images, SVGs, PowerPoint slides, spreadsheets, electrical
+In every project I have worked on, from the pixel sensor readout at the
+[Chair of Experimental Physics I](https://ep1.rub.de) at Ruhr-Universität
+Bochum to my own designs, this information existed, but it was scattered
+across images, SVGs, PowerPoint slides, spreadsheets, electrical
 specifications and geometric drawings. A typical bonding plan looks like this:
 
 ![A legacy bonding plan: chip photo with pad names, signal descriptions and colored wire lines, documented in a presentation slide](docs/legacy-bonding-plan-example.jpg)
@@ -51,8 +53,12 @@ courtyards, can be derived. So can bonding parameters and a test plan.
 
 ## The idea
 
-A few years ago I started capturing this data for my own chips in JSON files.
-This repository is an attempt to turn that into an open, canonical format,
+A few years ago I started capturing this data for my own chips in JSON
+files, and over time the notes, pad geometries, bonding parameters and
+small scripts around them grew into a private collection. Large parts of
+what is in this repository come from that collection. What is new is that
+it is published, in one place, as a format others can use and argue with.
+This repository is an attempt to turn it into an open, canonical format,
 `*.cob.json`, that:
 
 - describes **chip pads**, **PCB pads** and **wire parameters** in one file,
@@ -64,8 +70,8 @@ This repository is an attempt to turn that into an open, canonical format,
   Chip-on-Board techniques such as flip-chip later on.
 
 On 2026-09-15 I had a long conversation with Stuart Childs of wafer.space, who
-encouraged me to write my thoughts on this down in an orderly way. This
-repository is the result.
+encouraged me to write my thoughts on this down in an orderly way and make
+them public. This repository is the result.
 
 ## Preliminary roadmap
 
