@@ -1,5 +1,9 @@
 # open.cob.json
 
+<!-- CLAIM -->
+
+![A bare die glued onto a PCB, gold-colored top metal catching the light, with a fan of thin bond wires running from the chip edge down to a field of bond fingers on the board](docs/die-on-board.jpg)
+
 An open, canonical, machine-readable format for exchanging Chip-on-Board (COB)
 wire-bonding information between chip designers and PCB designers.
 
@@ -71,7 +75,9 @@ This repository is an attempt to turn it into an open, canonical format,
 
 On 2026-09-15 I had a long conversation with Stuart Childs of wafer.space, who
 encouraged me to write my thoughts on this down in an orderly way and make
-them public. This repository is the result.
+them public. This repository is the result. The story behind it, and the
+decisions in the format that were hardest to make, are in the blog post
+[open.cob.json: One File Between the Chip Designer and the PCB Designer](https://maxclerkwell.tech/posts/open-cob-json-september-2026/).
 
 ## Preliminary roadmap
 
