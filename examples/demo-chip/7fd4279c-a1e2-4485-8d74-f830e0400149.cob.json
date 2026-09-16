@@ -1,0 +1,1292 @@
+{
+  "schema": "cob.v1",
+  "uuid": "7fd4279c-a1e2-4485-8d74-f830e0400149",
+  "meta": {
+    "name": "OCJ-DEMO1",
+    "manufacturer": "fictional",
+    "revision": "A",
+    "description": "Fictional 9-pad test chip used as an open.cob.json example. Al wedge bonded COB.",
+    "die_lot": "unspecified",
+    "gds": "unspecified"
+  },
+  "units": {
+    "length": "mm",
+    "angle": "deg",
+    "origin": "die_center",
+    "axis": {
+      "x": "right",
+      "y": "up"
+    }
+  },
+  "tolerances": {
+    "die_placement": {
+      "xy_mm": 0.05,
+      "rotation_deg": 0.5
+    },
+    "pcb_fab": {
+      "copper_feature_mm": 0.02,
+      "mask_registration_mm": 0.05
+    }
+  },
+  "die": {
+    "size": [
+      {
+        "nom": 1.6,
+        "tol": 0.02
+      },
+      {
+        "nom": 1.6,
+        "tol": 0.02
+      }
+    ],
+    "thickness": {
+      "nom": 0.3,
+      "tol": 0.03
+    },
+    "offset": [
+      0,
+      0
+    ],
+    "rotation": 0,
+    "notch": {
+      "side": "top-left",
+      "size": [
+        0.1,
+        0.1
+      ]
+    },
+    "pads": [
+      {
+        "id": "D1",
+        "name": "CLK",
+        "center": [
+          -0.2,
+          0.72
+        ],
+        "center_tol": 0.002,
+        "size": [
+          0.08,
+          0.08
+        ],
+        "shape": "rect",
+        "metal": "Al",
+        "opening": [
+          0.07,
+          0.07
+        ],
+        "side": "top",
+        "bond": {
+          "allowed_types": [
+            "wedge"
+          ],
+          "min_pad_opening_um": 70
+        }
+      },
+      {
+        "id": "D2",
+        "name": "RST_N",
+        "center": [
+          0.0,
+          0.72
+        ],
+        "center_tol": 0.002,
+        "size": [
+          0.08,
+          0.08
+        ],
+        "shape": "rect",
+        "metal": "Al",
+        "opening": [
+          0.07,
+          0.07
+        ],
+        "side": "top",
+        "bond": {
+          "allowed_types": [
+            "wedge"
+          ],
+          "min_pad_opening_um": 70
+        }
+      },
+      {
+        "id": "D3",
+        "name": "SDA",
+        "center": [
+          0.2,
+          0.72
+        ],
+        "center_tol": 0.002,
+        "size": [
+          0.08,
+          0.08
+        ],
+        "shape": "rect",
+        "metal": "Al",
+        "opening": [
+          0.07,
+          0.07
+        ],
+        "side": "top",
+        "bond": {
+          "allowed_types": [
+            "wedge"
+          ],
+          "min_pad_opening_um": 70
+        }
+      },
+      {
+        "id": "D4",
+        "name": "OUT_P",
+        "center": [
+          0.72,
+          0.1
+        ],
+        "center_tol": 0.002,
+        "size": [
+          0.08,
+          0.08
+        ],
+        "shape": "rect",
+        "metal": "Al",
+        "opening": [
+          0.07,
+          0.07
+        ],
+        "side": "right",
+        "bond": {
+          "allowed_types": [
+            "wedge"
+          ],
+          "min_pad_opening_um": 70
+        },
+        "polarity": "positive"
+      },
+      {
+        "id": "D5",
+        "name": "OUT_N",
+        "center": [
+          0.72,
+          -0.1
+        ],
+        "center_tol": 0.002,
+        "size": [
+          0.08,
+          0.08
+        ],
+        "shape": "rect",
+        "metal": "Al",
+        "opening": [
+          0.07,
+          0.07
+        ],
+        "side": "right",
+        "bond": {
+          "allowed_types": [
+            "wedge"
+          ],
+          "min_pad_opening_um": 70
+        },
+        "polarity": "negative"
+      },
+      {
+        "id": "D6",
+        "name": "VDD",
+        "center": [
+          -0.2,
+          -0.72
+        ],
+        "center_tol": 0.002,
+        "size": [
+          0.08,
+          0.08
+        ],
+        "shape": "rect",
+        "metal": "Al",
+        "opening": [
+          0.07,
+          0.07
+        ],
+        "side": "bottom",
+        "bond": {
+          "allowed_types": [
+            "wedge"
+          ],
+          "min_pad_opening_um": 70
+        }
+      },
+      {
+        "id": "D7",
+        "name": "GND",
+        "center": [
+          0.0,
+          -0.72
+        ],
+        "center_tol": 0.002,
+        "size": [
+          0.08,
+          0.08
+        ],
+        "shape": "rect",
+        "metal": "Al",
+        "opening": [
+          0.07,
+          0.07
+        ],
+        "side": "bottom",
+        "bond": {
+          "allowed_types": [
+            "wedge"
+          ],
+          "min_pad_opening_um": 70
+        }
+      },
+      {
+        "id": "D8",
+        "name": "GND",
+        "center": [
+          0.2,
+          -0.72
+        ],
+        "center_tol": 0.002,
+        "size": [
+          0.08,
+          0.08
+        ],
+        "shape": "rect",
+        "metal": "Al",
+        "opening": [
+          0.07,
+          0.07
+        ],
+        "side": "bottom",
+        "bond": {
+          "allowed_types": [
+            "wedge"
+          ],
+          "min_pad_opening_um": 70
+        }
+      },
+      {
+        "id": "D9",
+        "name": "SCL",
+        "center": [
+          -0.72,
+          0.0
+        ],
+        "center_tol": 0.002,
+        "size": [
+          0.08,
+          0.08
+        ],
+        "shape": "rect",
+        "metal": "Al",
+        "opening": [
+          0.07,
+          0.07
+        ],
+        "side": "left",
+        "bond": {
+          "allowed_types": [
+            "wedge"
+          ],
+          "min_pad_opening_um": 70
+        }
+      }
+    ]
+  },
+  "pcb": {
+    "shapes": {
+      "FINGER": "27c699bd-b041-4152-87ee-cbbbf485375b",
+      "FINGER_PROBE": "374ffd9f-b11a-4646-9e45-dca5dddf8908",
+      "PADDLE": "038fdaa7-78c0-4a06-8ae1-31ecf67957ea",
+      "FID_DOT": {
+        "name": "fiducial dot",
+        "units": "mm",
+        "origin": {
+          "at": [
+            0,
+            0
+          ],
+          "meaning": "center"
+        },
+        "anchors": {
+          "center": [
+            0,
+            0
+          ]
+        },
+        "polygons": {
+          "copper": [
+            [
+              [
+                0.5,
+                0
+              ],
+              [
+                0.354,
+                0.354
+              ],
+              [
+                0,
+                0.5
+              ],
+              [
+                -0.354,
+                0.354
+              ],
+              [
+                -0.5,
+                0
+              ],
+              [
+                -0.354,
+                -0.354
+              ],
+              [
+                0,
+                -0.5
+              ],
+              [
+                0.354,
+                -0.354
+              ]
+            ]
+          ]
+        },
+        "tolerances": {
+          "vertex_mm": 0.02
+        }
+      }
+    },
+    "pads": [
+      {
+        "id": "P1",
+        "number": "1",
+        "name": "CLK",
+        "shape": "FINGER",
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "at": [
+          -0.4,
+          1.45
+        ],
+        "rotation": 90,
+        "finish": "ENIG",
+        "paste": "none",
+        "role": "bond_finger",
+        "limits": {
+          "min_pitch": 0.3,
+          "min_copper_clearance": 0.1
+        }
+      },
+      {
+        "id": "P2",
+        "number": "2",
+        "name": "RST_N",
+        "shape": "FINGER",
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "at": [
+          0.0,
+          1.45
+        ],
+        "rotation": 90,
+        "finish": "ENIG",
+        "paste": "none",
+        "role": "bond_finger",
+        "limits": {
+          "min_pitch": 0.3,
+          "min_copper_clearance": 0.1
+        }
+      },
+      {
+        "id": "P3",
+        "number": "3",
+        "name": "SDA",
+        "shape": "FINGER",
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "at": [
+          0.4,
+          1.45
+        ],
+        "rotation": 90,
+        "finish": "ENIG",
+        "paste": "none",
+        "role": "bond_finger",
+        "limits": {
+          "min_pitch": 0.3,
+          "min_copper_clearance": 0.1
+        }
+      },
+      {
+        "id": "P4",
+        "number": "4",
+        "name": "OUT_P",
+        "shape": "FINGER",
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "at": [
+          1.45,
+          0.2
+        ],
+        "rotation": 0,
+        "finish": "ENIG",
+        "paste": "none",
+        "role": "bond_finger",
+        "limits": {
+          "min_pitch": 0.3,
+          "min_copper_clearance": 0.1
+        }
+      },
+      {
+        "id": "P5",
+        "number": "5",
+        "name": "OUT_N",
+        "shape": "FINGER",
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "at": [
+          1.45,
+          -0.2
+        ],
+        "rotation": 0,
+        "finish": "ENIG",
+        "paste": "none",
+        "role": "bond_finger",
+        "limits": {
+          "min_pitch": 0.3,
+          "min_copper_clearance": 0.1
+        }
+      },
+      {
+        "id": "P6",
+        "number": "6",
+        "name": "VDD",
+        "shape": "FINGER_PROBE",
+        "scale": {
+          "x": 1.0,
+          "y": 1.2
+        },
+        "at": [
+          -0.4,
+          -1.45
+        ],
+        "rotation": 270,
+        "finish": "ENIG",
+        "paste": "none",
+        "role": "bond_finger",
+        "limits": {
+          "min_pitch": 0.4,
+          "min_copper_clearance": 0.1
+        }
+      },
+      {
+        "id": "P7",
+        "number": "7",
+        "name": "GND",
+        "shape": "FINGER",
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "at": [
+          0.0,
+          -1.45
+        ],
+        "rotation": 270,
+        "finish": "ENIG",
+        "paste": "none",
+        "role": "bond_finger",
+        "limits": {
+          "min_pitch": 0.3,
+          "min_copper_clearance": 0.1
+        }
+      },
+      {
+        "id": "P8",
+        "number": "8",
+        "name": "GND",
+        "shape": "FINGER_PROBE",
+        "scale": {
+          "x": 1.0,
+          "y": 1.2
+        },
+        "at": [
+          0.4,
+          -1.45
+        ],
+        "rotation": 270,
+        "finish": "ENIG",
+        "paste": "none",
+        "role": "bond_finger",
+        "limits": {
+          "min_pitch": 0.4,
+          "min_copper_clearance": 0.1
+        }
+      },
+      {
+        "id": "P9",
+        "number": "9",
+        "name": "SCL",
+        "shape": "FINGER",
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "at": [
+          -1.45,
+          0.0
+        ],
+        "rotation": 180,
+        "finish": "ENIG",
+        "paste": "none",
+        "role": "bond_finger",
+        "limits": {
+          "min_pitch": 0.3,
+          "min_copper_clearance": 0.1
+        }
+      },
+      {
+        "id": "EP",
+        "number": "EP",
+        "name": "GND",
+        "shape": "PADDLE",
+        "scale": {
+          "x": 0.95,
+          "y": 0.95
+        },
+        "at": [
+          0,
+          0
+        ],
+        "rotation": 0,
+        "finish": "ENIG",
+        "paste": "none",
+        "role": "die_attach"
+      }
+    ],
+    "misc": [
+      {
+        "id": "NO_VIA_UNDER_DIE",
+        "kind": "keepout",
+        "forbids": [
+          "via",
+          "microvia",
+          "pth"
+        ],
+        "layers": [
+          "*.Cu"
+        ],
+        "shape": "PADDLE",
+        "scale": {
+          "x": 1.05,
+          "y": 1.05
+        },
+        "at": [
+          0,
+          0
+        ],
+        "rotation": 0
+      },
+      {
+        "id": "CU_UNDER_DIE",
+        "kind": "copper_required",
+        "net": "GND",
+        "layers": [
+          "F.Cu"
+        ],
+        "satisfied_by": "EP",
+        "shape": "PADDLE",
+        "scale": {
+          "x": 0.9,
+          "y": 0.9
+        },
+        "at": [
+          0,
+          0
+        ],
+        "rotation": 0
+      },
+      {
+        "id": "FID1",
+        "kind": "fiducial",
+        "layers": [
+          "F.Cu",
+          "F.Mask"
+        ],
+        "shape": "FID_DOT",
+        "at": [
+          -2.5,
+          2.5
+        ],
+        "rotation": 0
+      },
+      {
+        "id": "FID2",
+        "kind": "fiducial",
+        "layers": [
+          "F.Cu",
+          "F.Mask"
+        ],
+        "shape": "FID_DOT",
+        "at": [
+          2.5,
+          -2.5
+        ],
+        "rotation": 0
+      }
+    ]
+  },
+  "wires": {
+    "defaults": {
+      "by_combination": [
+        {
+          "id": "AL25_WEDGE_ALPAD_ENIG",
+          "when": {
+            "wire": {
+              "type": "wedge",
+              "material": "Al",
+              "diameter_um": 25
+            },
+            "die_pad": {
+              "metal": "Al"
+            },
+            "pcb_pad": {
+              "finish": "ENIG"
+            }
+          },
+          "bond": {
+            "first": {
+              "site": "die",
+              "process": "ultrasonic_wedge",
+              "force_n": {
+                "min": 0.18,
+                "typ": 0.22,
+                "max": 0.28
+              },
+              "time_ms": {
+                "min": 15,
+                "typ": 20,
+                "max": 30
+              },
+              "ultrasonic": {
+                "power": 0.35,
+                "unit": "relative"
+              }
+            },
+            "second": {
+              "site": "pcb",
+              "process": "ultrasonic_wedge",
+              "force_n": {
+                "min": 0.2,
+                "typ": 0.26,
+                "max": 0.32
+              },
+              "time_ms": {
+                "typ": 25
+              },
+              "ultrasonic": {
+                "power": 0.4,
+                "unit": "relative"
+              }
+            }
+          },
+          "mechanical": {
+            "pull": {
+              "method": "destructive_pull",
+              "min_force_n": 0.03
+            }
+          }
+        }
+      ]
+    },
+    "items": [
+      {
+        "id": "W1",
+        "from": {
+          "die_pad": "D1"
+        },
+        "to": {
+          "pcb_pad": "P1"
+        },
+        "type": "wedge",
+        "material": "Al",
+        "diameter_um": 25,
+        "loop": {
+          "shape": "standard",
+          "height": {
+            "nom": 0.25,
+            "tol": 0.05
+          },
+          "max_height": 0.35,
+          "length": {
+            "max": 2.0
+          },
+          "clearance_to_die": 0.05
+        },
+        "bond": "unspecified",
+        "mechanical": {
+          "pull": {
+            "required": true,
+            "method": "destructive_pull",
+            "sample": "lot",
+            "min_force_n": 0.03,
+            "break_mode_allowed": [
+              "neck"
+            ],
+            "break_mode_forbidden": [
+              "pad_lift",
+              "interface",
+              "cratering"
+            ]
+          },
+          "shear": "none"
+        }
+      },
+      {
+        "id": "W2",
+        "from": {
+          "die_pad": "D2"
+        },
+        "to": {
+          "pcb_pad": "P2"
+        },
+        "type": "wedge",
+        "material": "Al",
+        "diameter_um": 25,
+        "loop": {
+          "shape": "standard",
+          "height": {
+            "nom": 0.25,
+            "tol": 0.05
+          },
+          "max_height": 0.35,
+          "length": {
+            "max": 2.0
+          },
+          "clearance_to_die": 0.05
+        },
+        "bond": "unspecified",
+        "mechanical": {
+          "pull": {
+            "required": true,
+            "method": "destructive_pull",
+            "sample": "lot",
+            "min_force_n": 0.03,
+            "break_mode_allowed": [
+              "neck"
+            ],
+            "break_mode_forbidden": [
+              "pad_lift",
+              "interface",
+              "cratering"
+            ]
+          },
+          "shear": "none"
+        }
+      },
+      {
+        "id": "W3",
+        "from": {
+          "die_pad": "D3"
+        },
+        "to": {
+          "pcb_pad": "P3"
+        },
+        "type": "wedge",
+        "material": "Al",
+        "diameter_um": 25,
+        "loop": {
+          "shape": "standard",
+          "height": {
+            "nom": 0.25,
+            "tol": 0.05
+          },
+          "max_height": 0.35,
+          "length": {
+            "max": 2.0
+          },
+          "clearance_to_die": 0.05
+        },
+        "bond": "unspecified",
+        "mechanical": {
+          "pull": {
+            "required": true,
+            "method": "destructive_pull",
+            "sample": "lot",
+            "min_force_n": 0.03,
+            "break_mode_allowed": [
+              "neck"
+            ],
+            "break_mode_forbidden": [
+              "pad_lift",
+              "interface",
+              "cratering"
+            ]
+          },
+          "shear": "none"
+        }
+      },
+      {
+        "id": "W4",
+        "from": {
+          "die_pad": "D4"
+        },
+        "to": {
+          "pcb_pad": "P4"
+        },
+        "type": "wedge",
+        "material": "Al",
+        "diameter_um": 25,
+        "loop": {
+          "shape": "standard",
+          "height": {
+            "nom": 0.25,
+            "tol": 0.05
+          },
+          "max_height": 0.35,
+          "length": {
+            "max": 2.0
+          },
+          "clearance_to_die": 0.05
+        },
+        "bond": "unspecified",
+        "mechanical": {
+          "pull": {
+            "required": true,
+            "method": "destructive_pull",
+            "sample": "lot",
+            "min_force_n": 0.03,
+            "break_mode_allowed": [
+              "neck"
+            ],
+            "break_mode_forbidden": [
+              "pad_lift",
+              "interface",
+              "cratering"
+            ]
+          },
+          "shear": "none"
+        }
+      },
+      {
+        "id": "W5",
+        "from": {
+          "die_pad": "D5"
+        },
+        "to": {
+          "pcb_pad": "P5"
+        },
+        "type": "wedge",
+        "material": "Al",
+        "diameter_um": 25,
+        "loop": {
+          "shape": "standard",
+          "height": {
+            "nom": 0.25,
+            "tol": 0.05
+          },
+          "max_height": 0.35,
+          "length": {
+            "max": 2.0
+          },
+          "clearance_to_die": 0.05
+        },
+        "bond": "unspecified",
+        "mechanical": {
+          "pull": {
+            "required": true,
+            "method": "destructive_pull",
+            "sample": "lot",
+            "min_force_n": 0.03,
+            "break_mode_allowed": [
+              "neck"
+            ],
+            "break_mode_forbidden": [
+              "pad_lift",
+              "interface",
+              "cratering"
+            ]
+          },
+          "shear": "none"
+        }
+      },
+      {
+        "id": "W6",
+        "from": {
+          "die_pad": "D6"
+        },
+        "to": {
+          "pcb_pad": "P6"
+        },
+        "type": "wedge",
+        "material": "Al",
+        "diameter_um": 25,
+        "loop": {
+          "shape": "standard",
+          "height": {
+            "nom": 0.25,
+            "tol": 0.05
+          },
+          "max_height": 0.35,
+          "length": {
+            "max": 2.0
+          },
+          "clearance_to_die": 0.05
+        },
+        "bond": "unspecified",
+        "mechanical": {
+          "pull": {
+            "required": true,
+            "method": "destructive_pull",
+            "sample": "lot",
+            "min_force_n": 0.03,
+            "break_mode_allowed": [
+              "neck"
+            ],
+            "break_mode_forbidden": [
+              "pad_lift",
+              "interface",
+              "cratering"
+            ]
+          },
+          "shear": "none"
+        }
+      },
+      {
+        "id": "W7",
+        "from": {
+          "die_pad": "D7"
+        },
+        "to": {
+          "pcb_pad": "P7"
+        },
+        "type": "wedge",
+        "material": "Al",
+        "diameter_um": 25,
+        "loop": {
+          "shape": "standard",
+          "height": {
+            "nom": 0.25,
+            "tol": 0.05
+          },
+          "max_height": 0.35,
+          "length": {
+            "max": 2.0
+          },
+          "clearance_to_die": 0.05
+        },
+        "bond": "unspecified",
+        "mechanical": {
+          "pull": {
+            "required": true,
+            "method": "destructive_pull",
+            "sample": "lot",
+            "min_force_n": 0.03,
+            "break_mode_allowed": [
+              "neck"
+            ],
+            "break_mode_forbidden": [
+              "pad_lift",
+              "interface",
+              "cratering"
+            ]
+          },
+          "shear": "none"
+        }
+      },
+      {
+        "id": "W8",
+        "from": {
+          "die_pad": "D8"
+        },
+        "to": {
+          "pcb_pad": "P8"
+        },
+        "type": "wedge",
+        "material": "Al",
+        "diameter_um": 25,
+        "loop": {
+          "shape": "standard",
+          "height": {
+            "nom": 0.25,
+            "tol": 0.05
+          },
+          "max_height": 0.35,
+          "length": {
+            "max": 2.0
+          },
+          "clearance_to_die": 0.05
+        },
+        "bond": "unspecified",
+        "mechanical": {
+          "pull": {
+            "required": true,
+            "method": "destructive_pull",
+            "sample": "lot",
+            "min_force_n": 0.03,
+            "break_mode_allowed": [
+              "neck"
+            ],
+            "break_mode_forbidden": [
+              "pad_lift",
+              "interface",
+              "cratering"
+            ]
+          },
+          "shear": "none"
+        }
+      },
+      {
+        "id": "W9",
+        "from": {
+          "die_pad": "D9"
+        },
+        "to": {
+          "pcb_pad": "P9"
+        },
+        "type": "wedge",
+        "material": "Al",
+        "diameter_um": 25,
+        "loop": {
+          "shape": "standard",
+          "height": {
+            "nom": 0.25,
+            "tol": 0.05
+          },
+          "max_height": 0.35,
+          "length": {
+            "max": 2.0
+          },
+          "clearance_to_die": 0.05
+        },
+        "bond": "unspecified",
+        "mechanical": {
+          "pull": {
+            "required": true,
+            "method": "destructive_pull",
+            "sample": "lot",
+            "min_force_n": 0.03,
+            "break_mode_allowed": [
+              "neck"
+            ],
+            "break_mode_forbidden": [
+              "pad_lift",
+              "interface",
+              "cratering"
+            ]
+          },
+          "shear": "none"
+        }
+      }
+    ],
+    "pairs": [
+      {
+        "id": "DP_OUT",
+        "kind": "differential",
+        "positive": {
+          "wire": "W4"
+        },
+        "negative": {
+          "wire": "W5"
+        },
+        "matched": {
+          "loop_shape": true,
+          "loop_height": true,
+          "wire_type": true,
+          "diameter_um": true,
+          "mechanical": true
+        },
+        "electrical": {
+          "zdiff_ohm": {
+            "min": 90,
+            "typ": 100,
+            "max": 110
+          },
+          "skew_ps": {
+            "max": 10
+          },
+          "length_match_mm": {
+            "max": 0.1
+          },
+          "common_mode_net": "GND"
+        }
+      }
+    ],
+    "electrical_specifications": [
+      {
+        "wire": "W1",
+        "specification": "unspecified"
+      },
+      {
+        "wire": "W2",
+        "specification": "unspecified"
+      },
+      {
+        "wire": "W3",
+        "specification": "unspecified"
+      },
+      {
+        "wire": "W4",
+        "net": "OUT_P",
+        "test": {
+          "continuity": {
+            "required": true,
+            "max_resistance_ohm": 0.5
+          }
+        },
+        "limits": {
+          "max_current_a": 0.01,
+          "max_voltage_v": 2.0
+        }
+      },
+      {
+        "wire": "W5",
+        "net": "OUT_N",
+        "test": {
+          "continuity": {
+            "required": true,
+            "max_resistance_ohm": 0.5
+          }
+        },
+        "limits": {
+          "max_current_a": 0.01,
+          "max_voltage_v": 2.0
+        }
+      },
+      {
+        "wire": "W6",
+        "net": "VDD",
+        "test": {
+          "continuity": {
+            "required": true,
+            "max_resistance_ohm": 0.3,
+            "method": "4wire"
+          }
+        },
+        "limits": {
+          "max_current_a": 0.2,
+          "max_voltage_v": 2.0
+        }
+      },
+      {
+        "wire": "W7",
+        "net": "GND",
+        "test": {
+          "continuity": {
+            "required": true,
+            "max_resistance_ohm": 0.3,
+            "method": "4wire"
+          }
+        },
+        "limits": {
+          "max_current_a": 0.2,
+          "max_voltage_v": 2.0
+        }
+      },
+      {
+        "wire": "W8",
+        "net": "GND",
+        "test": {
+          "continuity": {
+            "required": true,
+            "max_resistance_ohm": 0.3,
+            "method": "4wire"
+          }
+        },
+        "limits": {
+          "max_current_a": 0.2,
+          "max_voltage_v": 2.0
+        }
+      },
+      {
+        "wire": "W9",
+        "specification": "unspecified"
+      },
+      {
+        "pair": "DP_OUT",
+        "test": {
+          "skew": {
+            "required": true,
+            "max_ps": 10
+          },
+          "continuity_both": {
+            "required": true
+          }
+        }
+      }
+    ]
+  },
+  "assembly": {
+    "die_attach": {
+      "method": "conductive_epoxy",
+      "product": "unspecified",
+      "conductive": true,
+      "net": "GND",
+      "dispense": {
+        "pattern": "cross",
+        "dots": 5,
+        "volume_ul": 0.05,
+        "keepout_from_die_edge": 0.1
+      },
+      "bondline_um": {
+        "min": 20,
+        "typ": 40,
+        "max": 80
+      },
+      "surface": {
+        "needs_copper": true,
+        "finish": [
+          "ENIG"
+        ]
+      },
+      "cure": {
+        "temperature_c": {
+          "min": 140,
+          "typ": 150,
+          "max": 160
+        },
+        "time_min": {
+          "min": 55,
+          "typ": 60,
+          "max": 90
+        },
+        "atmosphere": "air"
+      },
+      "temper": "none"
+    },
+    "wire_bond": {
+      "method": "al_wedge",
+      "atmosphere": "air",
+      "plasma_clean": {
+        "required": true,
+        "when": "before_bond",
+        "gas": "Ar/O2",
+        "time_s": 30
+      },
+      "temper": "none"
+    },
+    "post": {
+      "encapsulate": "none"
+    },
+    "module_mount": "none",
+    "sequence": [
+      "pcb_clean",
+      "die_attach",
+      "die_attach.cure",
+      "plasma_clean",
+      "wire_bond"
+    ]
+  }
+}

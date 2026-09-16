@@ -1,0 +1,81 @@
+{
+  "schema": "cob.shape.v1",
+  "uuid": "038fdaa7-78c0-4a06-8ae1-31ecf67957ea",
+  "name": "die_attach_paddle_square",
+  "description": "Square die attach paddle with chamfered corners. Origin is the paddle center. Scale x/y to match the die plus adhesive margin.",
+  "units": "mm",
+  "origin": {
+    "at": [
+      0,
+      0
+    ],
+    "meaning": "center"
+  },
+  "anchors": {
+    "center": [
+      0,
+      0
+    ]
+  },
+  "polygons": {
+    "copper": [
+      [
+        [
+          -0.9,
+          1.0
+        ],
+        [
+          0.9,
+          1.0
+        ],
+        [
+          1.0,
+          0.9
+        ],
+        [
+          1.0,
+          -0.9
+        ],
+        [
+          0.9,
+          -1.0
+        ],
+        [
+          -0.9,
+          -1.0
+        ],
+        [
+          -1.0,
+          -0.9
+        ],
+        [
+          -1.0,
+          0.9
+        ]
+      ]
+    ],
+    "mask": [
+      [
+        [
+          -0.95,
+          0.95
+        ],
+        [
+          0.95,
+          0.95
+        ],
+        [
+          0.95,
+          -0.95
+        ],
+        [
+          -0.95,
+          -0.95
+        ]
+      ]
+    ]
+  },
+  "tolerances": {
+    "vertex_mm": 0.02
+  }
+}
