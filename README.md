@@ -246,3 +246,6 @@ the original work and indicate if changes were made. Suggested attribution:
 ## Author
 
 Stephan Bökelmann, [maxclerkwell.tech](https://maxclerkwell.tech)
+
+If this saves you an afternoon of drawing bond fingers by hand, you can
+[buy me a coffee](https://buymeacoffee.com/MaxClerkwell).
