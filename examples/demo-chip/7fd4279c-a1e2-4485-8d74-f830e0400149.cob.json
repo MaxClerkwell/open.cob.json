@@ -80,7 +80,8 @@
             "wedge"
           ],
           "min_pad_opening_um": 70
-        }
+        },
+        "electrical": "input"
       },
       {
         "id": "D2",
@@ -106,7 +107,8 @@
             "wedge"
           ],
           "min_pad_opening_um": 70
-        }
+        },
+        "electrical": "input"
       },
       {
         "id": "D3",
@@ -132,7 +134,8 @@
             "wedge"
           ],
           "min_pad_opening_um": 70
-        }
+        },
+        "electrical": "bidirectional"
       },
       {
         "id": "D4",
@@ -159,7 +162,8 @@
           ],
           "min_pad_opening_um": 70
         },
-        "polarity": "positive"
+        "polarity": "positive",
+        "electrical": "output"
       },
       {
         "id": "D5",
@@ -186,7 +190,8 @@
           ],
           "min_pad_opening_um": 70
         },
-        "polarity": "negative"
+        "polarity": "negative",
+        "electrical": "output"
       },
       {
         "id": "D6",
@@ -212,7 +217,8 @@
             "wedge"
           ],
           "min_pad_opening_um": 70
-        }
+        },
+        "electrical": "power_in"
       },
       {
         "id": "D7",
@@ -238,7 +244,8 @@
             "wedge"
           ],
           "min_pad_opening_um": 70
-        }
+        },
+        "electrical": "power_in"
       },
       {
         "id": "D8",
@@ -264,7 +271,8 @@
             "wedge"
           ],
           "min_pad_opening_um": 70
-        }
+        },
+        "electrical": "power_in"
       },
       {
         "id": "D9",
@@ -290,7 +298,8 @@
             "wedge"
           ],
           "min_pad_opening_um": 70
-        }
+        },
+        "electrical": "input"
       }
     ]
   },

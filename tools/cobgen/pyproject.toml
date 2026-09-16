@@ -1,0 +1,19 @@
+[project]
+name = "cobgen"
+version = "0.1.0"
+description = "Generate the die block of a .cob.json file from a GDSII or OASIS layout"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "CC-BY-4.0"
+authors = [{ name = "Stephan Bökelmann" }]
+dependencies = ["gdstk>=0.9"]
+
+[project.scripts]
+cobgen = "cobgen.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cobgen"]

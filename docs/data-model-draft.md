@@ -87,6 +87,12 @@ given or not documented.
 `die`, `pcb` and `wires` are mandatory objects. `assembly` is mandatory once
 the file is a delivery artifact and may be `"unspecified"`.
 
+A **die-only file** is the minimal valid delivery from a chip designer: the
+`die` block is complete, and `pcb.pads`, `pcb.misc`, `wires.items`,
+`wires.pairs`, `wires.electrical_specifications`, `tolerances` and
+`assembly` are all `"unspecified"`. `pcb.shapes` is `"none"`. This is what
+`tools/cobgen` produces from a layout.
+
 Coordinates: `units` is declared once per file and applies to every value in
 it. Origin is always the die center, Y up. Export to KiCad mirrors Y.
 
@@ -112,6 +118,7 @@ Only the chip. No cutout, no vias, no land pattern here.
       "metal": "Al",
       "opening": [0.07, 0.07],
       "side": "top",
+      "electrical": "power_in",
       "bond": { "allowed_types": ["wedge"], "min_pad_opening_um": 70 }
     }
   ]
@@ -119,7 +126,12 @@ Only the chip. No cutout, no vias, no land pattern here.
 ```
 
 Per pad mandatory: stable `id` (never just a number), `center`, `size`,
-`shape`, `name`. `size` and `thickness` carry the dicing and wafer
+`shape`, `name`. `name` may be `"unspecified"` when the layout carries no
+label for the pad. An optional `source` object records where the pad came
+from, for example the I/O cell name and whether a label was found. `electrical` is the pin type for the schematic symbol:
+`input | output | bidirectional | tri_state | passive | power_in |
+power_out | open_collector | open_emitter | no_connect`. It defaults to
+`passive`. `size` and `thickness` carry the dicing and wafer
 tolerances. `center_tol` is the pad position tolerance from lithography and
 is usually negligible against die placement. Useful: `metal`, passivation `opening`, `side` for
 auto-routing, optional `polarity` for differential signals. Several pads may
@@ -261,7 +273,11 @@ drill).
 Everything on the PCB that is not a pad but must be there, or must not be
 there, for the COB to work: mask openings, cutouts, via keepouts, required
 copper, fiducials, silk. Each entry places a shape on one or more layers
-and says what it means.
+and says what it means. `layers` is mandatory for every misc entry and
+uses KiCad layer names (`F.Cu`, `F.Mask`, `F.SilkS`, `Edge.Cuts`,
+`Dwgs.User`, `*.Cu`, ...). Pads do not carry a layer: their copper is
+always on `F.Cu`, their mask polygon on `F.Mask`. The die itself is
+rendered on `F.SilkS`.
 
 ```json
 "misc": [
@@ -502,7 +518,9 @@ manufacturing sequence that turns die, pcb and wires into a COB.
 
 | From | KiCad symbol | KiCad footprint | Test / production |
 |---|---|---|---|
-| `pcb.pads` number, shape, position | one pin per PCB pad | real pads, mask and paste from the shape | |
+| `pcb.pads` number, shape, position | one pin per PCB pad | custom pad on F.Cu, mask polygon on F.Mask | |
+| `die` outline, notch, die pads | | polygons on F.SilkS | |
+| `die.pads[].electrical` | pin type | | |
 | `die` outline and pads | | graphics on Fab/User layers | |
 | `wires.items` | | lines on a user layer, courtyard incl. loop overhang, optional pad die_length | bonder program after merging defaults |
 | `pcb.misc` keepout | | rule area | DRC |
@@ -521,7 +539,7 @@ manufacturing sequence that turns die, pcb and wires into a COB.
   resolves to an alias or a catalog UUID. Aliases never look like UUIDs.
 - A shape used by a bonded pad has a `bond_target` anchor. Finger pitch
   must respect `limits.min_pitch`. Paste `none` on bond fingers.
-- `wires.items` non-empty. Every item has `loop`, `bond` and `mechanical`
+- `wires.items` non-empty or `"unspecified"`. Every item has `loop`, `bond` and `mechanical`
   as objects or `"unspecified"`. `custom` loops need a `path`.
 - `electrical_specifications`: `"unspecified"` or exactly one entry per
   wire. `[]` and `{}` invalid.

@@ -1,0 +1,22 @@
+[project]
+name = "cobkicad"
+version = "0.1.0"
+description = "Generate KiCad symbol and footprint from a .cob.json file"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "CC-BY-4.0"
+authors = [{ name = "Stephan Bökelmann" }]
+dependencies = ["cobviz"]
+
+[project.scripts]
+cobkicad = "cobkicad.cli:main"
+
+[tool.uv.sources]
+cobviz = { path = "../cobviz", editable = true }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cobkicad"]
