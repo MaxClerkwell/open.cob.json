@@ -1,6 +1,7 @@
 # open.cob.json
 
-<!-- CLAIM -->
+**From bare die to bonded board, with nothing left to re-derive.**
+Describe the chip once, generate the rest.
 
 ![A bare die glued onto a PCB, gold-colored top metal catching the light, with a fan of thin bond wires running from the chip edge down to a field of bond fingers on the board](docs/die-on-board.jpg)
 
