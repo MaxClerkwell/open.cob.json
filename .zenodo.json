@@ -1,0 +1,35 @@
+{
+  "title": "open.cob.json: An Open Exchange Format for Chip-on-Board Wire Bonding",
+  "description": "<p>An open, canonical, machine-readable format for exchanging Chip-on-Board (COB) wire-bonding information between chip designers and PCB designers: die pads, PCB bond fingers and the wires between them, described once and generated from there.</p><p>The repository holds the format specification, a JSON Schema, worked examples and tools that turn a description into KiCad symbols and footprints.</p><p>Status: work in progress. Nothing here is stable yet; meaningful intermediate states are frozen with git tags and archived as separate versions of this record.</p>",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Bökelmann, Stephan",
+      "orcid": "0000-0002-2119-0064",
+      "affiliation": "nabla B Ingenieurbüro und Dienstleistungs-UG (haftungsbeschränkt), Bochum, Germany"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "chip-on-board",
+    "wire bonding",
+    "COB",
+    "ASIC packaging",
+    "bare die",
+    "KiCad",
+    "PCB design",
+    "JSON Schema",
+    "exchange format",
+    "open hardware",
+    "EDA interoperability"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/MaxClerkwell/open.cob.json",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
