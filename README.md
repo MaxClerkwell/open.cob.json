@@ -2,6 +2,8 @@
 
 <img src="docs/die-on-board.jpg" align="right" width="180" alt="A bare die glued onto a PCB, gold-colored top metal catching the light, with a fan of thin bond wires running from the chip edge down to a field of bond fingers on the board">
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22850092.svg)](https://doi.org/10.5281/zenodo.22850092)
+
 **From bare die to bonded board, with nothing left to re-derive.**
 Describe the chip once, generate the rest.
 
@@ -240,8 +242,11 @@ tools, is licensed under the
 You may copy, modify, fork and use it commercially, as long as you credit
 the original work and indicate if changes were made. Suggested attribution:
 
-> open.cob.json by Stephan Bökelmann, https://github.com/MaxClerkwell/open.cob.json,
+> open.cob.json by Stephan Bökelmann, https://doi.org/10.5281/zenodo.22850092,
 > licensed under CC BY 4.0.
+
+The DOI above always resolves to the latest version. Each tagged release also
+gets its own DOI, listed on the Zenodo record, for citing an exact state.
 
 ## Author
 
