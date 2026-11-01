@@ -12,7 +12,7 @@ dependencies = ["cobviz"]
 cobkicad = "cobkicad.cli:main"
 
 [tool.uv.sources]
-cobviz = { path = "../cobviz", editable = true }
+cobviz = { workspace = true }
 
 [build-system]
 requires = ["hatchling"]

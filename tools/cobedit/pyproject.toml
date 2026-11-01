@@ -12,8 +12,8 @@ dependencies = ["cobviz", "cobkicad"]
 cobedit = "cobedit.app:main"
 
 [tool.uv.sources]
-cobviz = { path = "../cobviz", editable = true }
-cobkicad = { path = "../cobkicad", editable = true }
+cobviz = { workspace = true }
+cobkicad = { workspace = true }
 
 [build-system]
 requires = ["hatchling"]

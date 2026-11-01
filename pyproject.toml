@@ -1,0 +1,21 @@
+[project]
+name = "open-cob-json"
+version = "0.1.0"
+description = "Workspace root: run any tool from the repository root with `uv run <tool>`"
+requires-python = ">=3.11"
+license = "CC-BY-4.0"
+authors = [{ name = "Stephan Bökelmann" }]
+dependencies = ["cobviz", "cobedit", "cobkicad", "cobgen", "cobtestdata"]
+
+[tool.uv.workspace]
+members = ["tools/*"]
+
+[tool.uv.sources]
+cobviz = { workspace = true }
+cobedit = { workspace = true }
+cobkicad = { workspace = true }
+cobgen = { workspace = true }
+cobtestdata = { workspace = true }
+
+[tool.uv]
+package = false

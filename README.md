@@ -116,7 +116,15 @@ Tags will mark the state after each step that is worth freezing.
 
 All tools are small Python projects run with [uv](https://docs.astral.sh/uv/).
 No installation is needed beyond uv itself; `uv run` creates the
-environment on first use.
+environment on first use. The repository root is a uv workspace, so every
+tool can be started from the root with its name:
+
+```bash
+uv run cobgen --file testdata/dies/0000/chip_top.oas --pdk gf180mcu --out testdata/dies/0000/0000.cob.json
+uv run cobedit --file testdata/dies/0000/0000.cob.json
+```
+
+Running `uv run <tool>` inside `tools/<tool>/` works as before.
 
 | Tool | Purpose |
 |---|---|
@@ -124,6 +132,7 @@ environment on first use.
 | [`tools/cobedit`](tools/cobedit/) | Tkinter editor: view, place PCB pads, export KiCad |
 | [`tools/cobkicad`](tools/cobkicad/) | KiCad symbol and footprint from the command line |
 | [`tools/cobgen`](tools/cobgen/) | `die` block from a GDSII or OASIS layout |
+| [`tools/cobtestdata`](tools/cobtestdata/) | `initialize_testdata` fetches the wafer.space reticles, `extract_die` exports one chip as cobgen input, `cobclean` removes it all again |
 
 ### Try it: KiCad symbol and footprint from the example files
 
@@ -182,11 +191,10 @@ uv run cobedit --file ../../examples/demo-chip/7fd4279c-a1e2-4485-8d74-f830e0400
 3. **Export KiCad...** writes symbol and footprint from the current state.
    **Save as...** keeps the `.cob.json` if you want to continue later.
 
-Note that `cobedit` cannot add wires yet. Pads placed in the editor show up
-in the footprint and the symbol, but the bond wires between die pads and
-PCB pads still have to be written into the `wires` block of the
-`.cob.json` by hand, or come from a file that already has them, like the
-demo chip.
+Wires are added the same way: **Add wire**, click a die pad, click a PCB
+pad. The editor records the connection, type, material and diameter; loop
+geometry and bond parameters stay `"unspecified"` until they are filled
+in by hand or come from a file that already has them, like the demo chip.
 
 To start from a real bare die instead, run `cobgen` on a layout first. It
 writes a die-only file with the chip pads filled in and the PCB side
